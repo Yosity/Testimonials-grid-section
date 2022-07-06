@@ -1,0 +1,92 @@
+
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    padding: 10% 8%;
+    min-height: 100vh;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 17px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem ;
+    min-width: 300px;
+}
+
+.card {
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+}
+
+
+.author-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10em;
+}
+.author-info-container img {
+    width: 2.3rem;
+    border-radius: 1.5rem;
+}
+
+.author-info-container span {
+    opacity: 50%;
+}
+#card-one .author-info-container,
+#card-two .author-info-container,
+#card-four .author-info-container{
+    color : hsl(0, 0%, 81%);
+}
+
+
+.article-header {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-top: 0;
+}
+.article {
+    color: hsl(0, 0%, 81%);
+    opacity: 70%;
+}
+#card-one .article-header,
+#card-two .article-header,
+#card-four .article-header {
+    color: white;
+}
+
+#card-one {
+    background-color: hsl(263, 55%, 52%);
+    background-image: url("images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+}
+
+#card-two {
+    background-color: hsl(217, 19%, 35%);
+}
+#card-three {
+    background-color: white;
+}
+#card-four {
+    background-color: hsl(219, 29%, 14%);
+}
+#card-five {
+    background-color: white;
+}
+
+#card-three .article,
+#card-five .article {
+    color: hsl(0, 1%, 33%);
+}
+#card-three .author-info-container,
+#card-five .author-info-container {
+     color : hsl(219, 29%, 14%);
+}
+
+
+.attribution {
+    display: none;
+}
