@@ -15,6 +15,33 @@ main {
     min-width: 300px;
 }
 
+@media (min-width : 1000px) {
+    
+    body {
+        padding: 3% 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        max-width: 90rem;
+    }
+    #card-one ,
+    #card-four{
+        grid-column: span 2;
+    }
+    #card-three {
+        grid-row: 2;
+        grid-column: 1;
+    }
+    #card-five {
+        grid-column: 4;
+        grid-row: 1;
+        grid-row-start: 1;
+        grid-row-end: 3 ;
+    }
+}
 .card {
     border-radius: 0.5rem;
     padding: 1rem 2rem;
@@ -51,6 +78,17 @@ main {
     color: hsl(0, 0%, 81%);
     opacity: 70%;
 }
+@media (min-width : 1000px) {
+    
+    .article-header {
+        font-size: 20px;
+    }
+    .article {
+        font-size: 15px;
+    }
+}
+
+
 #card-one .article-header,
 #card-two .article-header,
 #card-four .article-header {
@@ -89,4 +127,21 @@ main {
 
 .attribution {
     display: none;
+}
+
+@media (min-width: 1000px) {
+    .attribution {
+        display: block;
+        position: absolute;
+        top: 3%;
+        left: 50%;
+        transform: translateX(-50%);
+        
+        font-size: 1.5rem;
+    }
+    .attribution a {
+        text-decoration: none;
+        color: hsl(263, 55%, 52%);
+        font-weight: bold;
+    }
 }
